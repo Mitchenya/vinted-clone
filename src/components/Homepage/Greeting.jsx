@@ -14,7 +14,13 @@ function Greeting() {
 
   return (
     <div>
-      <p>Welcome Back: {user.username}</p>
+      {user.slice(2, 3).map((user, index) => {
+        return (
+          <div key={index}>
+            <h3>Welcome Back {user.username}!</h3>
+          </div>
+        );
+      })}
     </div>
   );
 }

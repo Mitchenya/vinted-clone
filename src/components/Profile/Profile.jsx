@@ -9,23 +9,23 @@ function Profile() {
 
   useEffect(() => {
     getUsers().then((data) => {
-      console.log(data)
+      console.log(data);
       return setUser(data);
     });
   }, []);
 
   return (
     <div>
-            {user.slice(2,3).map((user, index)=>{
-             return (
-                <div key={index}>
-                    <img id='profile-pic'src={user.avatar_url}/>
-                    <p>Username: {user.username}</p>
-                    <p>Kudos: {user.kudos}</p>
-                </div> )
-            })}
-            
-        </div>
+      {user.slice(2, 3).map((user, index) => {
+        return (
+          <div key={index}>
+            <img id="profile-pic" src={user.avatar_url} />
+            <p>Username: {user.username}</p>
+            <p>Kudos: {user.kudos}</p>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
