@@ -1,7 +1,11 @@
+import ProfilePic from "../Profile/ProfilePic";
+import './Header.css';
+
 function Header() {
   return (
-    <div>
-      <h1>This is the Header</h1>
+    <div className="header">
+      <h1>This is </h1>
+      <ProfilePic />
     </div>
   );
 }

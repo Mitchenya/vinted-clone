@@ -5,6 +5,13 @@ const northMarketPlace = axios.create({
 });
 export function getUsers() {
   return northMarketPlace.get("/api/users").then(({ data }) => {
-    return data.users[2];
+    return data.users;
   });
 }
+
+export function getItems() {
+  return northMarketPlace.get("/api/items").then(({ data }) => {
+    return data.items;
+  });
+}
+getItems();

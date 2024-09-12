@@ -1,20 +1,24 @@
 import React from "react";
 import "./Homepage.css";
+import Greeting from "../Homepage/Greeting"
+import ItemContainer from "../ItemContainer/ItemContainer";
 // import Logo from "../Logo/Logo";
-// import Profile from "../Profile/Profile";
 // import AllCategories from "../AllCategories/AllCategories";
 // import SearchBar from "../SearchBar/SearchBar";
-// import ItemContainer from "../ItemContainer";
 
 function Homepage() {
   return (
     <div className="homepage">
+      <p></p>
       {/* <Logo />
       <Profile />
       <AllCategories />
       <SearchBar />
-      <ItemContainer /> */}
+       */}
       <h1>Home</h1>
+      <Greeting/>
+      <ItemContainer/>
+      
     </div>
   );
 }

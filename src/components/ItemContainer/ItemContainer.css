@@ -1,0 +1,27 @@
+.item-photos{
+  /*  height:auto;
+   /* width:100%; 
+    display:flex;*/
+}
+
+.item-div{
+    text-align: center;
+   /* padding:5px;*/
+width:48%;
+
+}
+
+.item-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.item-container img{
+    width:100%;
+    height:auto;
+    border-radius: 10px;
+    border:2px black solid
+}
