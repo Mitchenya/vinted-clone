@@ -15,7 +15,7 @@ function Profile() {
   return (
     <div>
       <h1>Profile Page</h1>
-      <p>{user.username}</p>
+      {user && <p>{user.username}</p>}
     </div>
   );
 }
