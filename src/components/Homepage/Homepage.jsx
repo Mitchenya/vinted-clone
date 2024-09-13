@@ -1,6 +1,6 @@
 import React from "react";
 import "./Homepage.css";
-import Greeting from "../Homepage/Greeting"
+import Greeting from "../Homepage/Greeting";
 import ItemContainer from "../ItemContainer/ItemContainer";
 // import Logo from "../Logo/Logo";
 // import AllCategories from "../AllCategories/AllCategories";
@@ -16,9 +16,8 @@ function Homepage() {
       <SearchBar />
        */}
       <h1>Home</h1>
-      <Greeting/>
-      <ItemContainer/>
-      
+      <Greeting />
+      <ItemContainer />
     </div>
   );
 }

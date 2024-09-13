@@ -7,6 +7,7 @@ import Profile from "./components/Profile/Profile";
 import Favourites from "./pages/Favourites";
 import Basket from "./pages/Basket";
 import Header from "./components/Header/Header";
+import "./App.css";
 // import SignUpMenu from "./components/SignUpMenu";
 // import SearchResults from "./components/SearchResults";
 
