@@ -8,6 +8,8 @@ import Favourites from "./pages/Favourites";
 import Basket from "./pages/Basket";
 import Header from "./components/Header/Header";
 import "./App.css";
+import ItemPage from "./components/ItemPage/ItemPage";
+import ShrekCity from "./components/ErrorPage/ErrorPage";
 // import SignUpMenu from "./components/SignUpMenu";
 // import SearchResults from "./components/SearchResults";
 
@@ -21,7 +23,8 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/favourites" element={<Favourites />} />
           <Route path="/basket" element={<Basket />} />
-          {/* <Route path="/item-page" element={ItemPage} /> */}
+          <Route path="/item/:id" element={<ItemPage />} />
+          <Route path="/404" element={<ShrekCity />} />
         </Routes>
       </main>
       <Navbar />
