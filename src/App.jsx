@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./components/Homepage/Homepage";
 import Profile from "./components/Profile/Profile";
-import Favourites from "./pages/Favourites";
+import Favourites from "./components/Favourites/Favourites";
 import Basket from "./pages/Basket";
 import Header from "./components/Header/Header";
 import "./App.css";

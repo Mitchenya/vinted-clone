@@ -11,9 +11,13 @@ function ItemContainer() {
       const seen = new Set();
       const uniqueItems = data
         .filter((item) => {
+          const hasUrl=!!item.img_url
           const isDuplicate = seen.has(item.item_name);
-          seen.add(item.item_name);
-          return !isDuplicate;
+          if (hasUrl && !isDuplicate){
+            seen.add(item.item_name);
+            return true;
+          }
+          return false;
         })
         .slice(0, 10);
 
