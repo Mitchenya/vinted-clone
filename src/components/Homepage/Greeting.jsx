@@ -14,7 +14,7 @@ function Greeting() {
 
   return (
     <div>
-      {user.slice(2, 3).map((user, index) => {
+      {user.slice(1, 2).map((user, index) => {
         return (
           <div key={index}>
             <h3>Welcome Back {user.username}!</h3>

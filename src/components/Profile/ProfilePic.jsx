@@ -9,13 +9,15 @@ function ProfilePic() {
 
   useEffect(() => {
     getUsers().then((data) => {
-      return setUser(data[2]);
+      return setUser(data[1]);
     });
   }, []);
 
   return (
     <div>
-      <Link to='/profile'><img id='header-pic' src={user.avatar_url}></img></Link>
+      <Link to="/profile">
+        <img id="header-pic" src={user.avatar_url}></img>
+      </Link>
     </div>
   );
 }

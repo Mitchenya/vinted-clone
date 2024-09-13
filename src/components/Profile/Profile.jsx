@@ -13,7 +13,7 @@ function Profile() {
 
   return (
     <div>
-      {user.slice(2, 3).map((user, index) => {
+      {user.slice(1, 2).map((user, index) => {
         return (
           <div key={index}>
             <img id="profile-pic" src={user.avatar_url} />
