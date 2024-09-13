@@ -1,18 +1,36 @@
 import { getItemById } from "../../utils/api";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 
 function ItemPage() {
   const { id } = useParams();
-  const [itemById, setItemById] = useState([]);
+  const [itemById, setItemById] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
   console.log(id);
 
   useEffect(() => {
-    getItemById(id).then((data) => {
-      console.log(data);
-      return setItemById(data);
-    });
-  }, []);
+    setLoading(true);
+    getItemById(id)
+      .then((data) => {
+        if (data) {
+          setItemById(data);
+        } else {
+          setIsError(true);
+        }
+        setLoading(false);
+      })
+      .catch(() => {
+        setIsError(true);
+        setLoading(false);
+      });
+  }, [id]);
+
+  if (isError) {
+    return <Navigate to="/404" />;
+  }
+
+  if (loading) return <div>...Loading</div>;
 
   return (
     <div className="item-div">
