@@ -18,7 +18,7 @@ function Favourites() {
               <Link to={`/item/${item.item_id}`}>
                 <img src={item.img_url} />
                 <p>{item.item_name}</p>
-                <p>{item.price}</p>
+                <p>£{item.price}</p>
               </Link>
             </div>
           );
