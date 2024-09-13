@@ -10,11 +10,13 @@ import Header from "./components/Header/Header";
 import "./App.css";
 import ItemPage from "./components/ItemPage/ItemPage";
 import ShrekCity from "./components/ErrorPage/ErrorPage";
+import {FavouritesProvider} from "./components/Favourites/FavouritesContext"
 // import SignUpMenu from "./components/SignUpMenu";
 // import SearchResults from "./components/SearchResults";
 
 function App() {
   return (
+    <FavouritesProvider>
     <div className="app-container">
       <Header />
       <main className="main-content">
@@ -29,6 +31,7 @@ function App() {
       </main>
       <Navbar />
     </div>
+    </FavouritesProvider>
   );
 }
 
