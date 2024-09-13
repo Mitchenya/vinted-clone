@@ -21,6 +21,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/favourites" element={<Favourites />} />
           <Route path="/basket" element={<Basket />} />
+          {/* <Route path="/item-page" element={ItemPage} /> */}
         </Routes>
       </main>
       <Navbar />
