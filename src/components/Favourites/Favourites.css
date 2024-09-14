@@ -1,0 +1,23 @@
+.favourites-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    /* padding:5px;*/
+    width: 48%;
+  }
+  
+  .favourites-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px black solid;
+  }
+  
+  .item-div {
+    text-align: center;
+    /* padding:5px;*/
+    width: 48%;
+  }

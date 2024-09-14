@@ -1,0 +1,32 @@
+.btn {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 12px 14px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  color: gray;
+  /*border: gray 1px solid;*/
+}
+
+.button-cont {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 9px;
+  /* border: rgb(248, 248, 248) 1px solid; */
+}
+
+.nav-full-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100%;
+  background-color: white;
+}
